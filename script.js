@@ -1,4 +1,3 @@
-// script.js
 
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault(); // stop page from refreshing
@@ -7,12 +6,12 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const password = document.getElementById("password").value;
   const errorMsg = document.getElementById("errorMsg");
 
-  // Fake credentials (for demo only)
+  // Fake login (for demo only)
   const validEmail = "test@example.com";
   const validPassword = "password123";
 
   if (email === validEmail && password === validPassword) {
-    // Success → redirect to a fake dashboard
+    // Success direct to a dashboard
     window.location.href = "dashboard.html";
   } else {
     // Show error message
